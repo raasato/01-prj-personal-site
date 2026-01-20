@@ -7,7 +7,8 @@
 
 /* Body: overall page styling */
 body {
-  font-family: Arial, sans-serif;
+  /* Use Anaheim font from Google Fonts */
+  font-family: 'Anaheim', sans-serif;
   line-height: 1.6;
   color: #333;
   /* Add padding at top so content doesn't hide under navbar */
@@ -100,9 +101,98 @@ body {
   color: #FFD700;
 }
 
+/* Bio content container: holds image and text side by side */
+.bio-content {
+  /* Display items side by side */
+  display: flex;
+  /* Add space between image and text */
+  gap: 30px;
+  /* Align items to the top */
+  align-items: flex-start;
+  /* Align text to the left */
+  text-align: left;
+}
+
+/* Bio image: photo in about me section */
+.bio-img {
+  /* Set image size */
+  width: 250px;
+  height: 250px;
+  /* Make border rounded */
+  border-radius: 10px;
+  /* Make sure image covers the area nicely */
+  object-fit: cover;
+  /* Add a border around the image */
+  border: 3px solid #FFD700;
+  /* Prevent image from shrinking */
+  flex-shrink: 0;
+}
+
+/* Bio text container: holds the paragraphs */
+.bio-text {
+  /* Allow text to take up remaining space */
+  flex: 1;
+}
+
 .bio p {
   font-size: 18px;
   line-height: 1.8;
+  /* Add space between paragraphs */
+  margin-bottom: 15px;
+}
+
+/* Remove bottom margin from last paragraph */
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* Hobbies Section: personal interests and activities */
+.hobbies {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hobbies h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+.hobbies p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Hobbies list: clean presentation */
+.hobbies ul {
+  list-style: none;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hobbies li {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  /* Change to inline-block so items can sit side by side */
+  display: inline-block;
+  /* Make each item take up half the width minus some space */
+  width: 48%;
+  /* Add space between columns */
+  margin-right: 2%;
+  /* Align content to the top */
+  vertical-align: top;
+  /* Add a subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove right margin from every second item (right column) */
+.hobbies li:nth-child(2n) {
+  margin-right: 0;
 }
 
 /* Skills Section: your abilities */
@@ -191,7 +281,8 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
-  font-family: Arial, sans-serif;
+  /* Use Anaheim font in form fields too */
+  font-family: 'Anaheim', sans-serif;
 }
 
 /* Textarea specific: prevent resizing */
