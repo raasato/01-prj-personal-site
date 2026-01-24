@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <title>Robynne's Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <!-- Google Fonts: Anaheim font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap">
   <!-- Google Material Icons: library for icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <!-- Navigation Bar: Links to different sections -->
@@ -26,7 +29,6 @@
     <!-- Profile image with rounded border -->
     <img src="img/profile-img.jpeg" alt="Profile picture" class="profile-img">
     <h1>Welcome to My Portfolio</h1>
-    <p>I'm a web development student creating amazing projects</p>
   </section>
 
   <!-- Bio Section: Information about yourself -->
@@ -115,32 +117,15 @@
     </ul>
   </section>
 
-  <!-- Contact Section: Form to get in touch -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p>Have a question or want to work together? Send me a message!</p>
-    <form>
-      <!-- Name input field -->
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <!-- Email input field -->
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <!-- Message textarea -->
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <!-- Submit button -->
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer Section: Social media links -->
-  <footer class="footer">
+  <!-- Footer Section: Social media links and contact -->
+  <footer class="footer" id="contact">
     <p>Connect with me:</p>
     <div class="social-links">
+      <!-- Email link with icon -->
+      <a href="mailto:rasato@asu.edu">
+        <span class="material-symbols-outlined">email</span>
+        Email
+      </a>
       <!-- LinkedIn link with icon -->
       <a href="https://www.linkedin.com/in/robynne-asato-882105368/" target="_blank">
         <span class="material-symbols-outlined">work</span>
@@ -157,7 +142,7 @@
         CodePen
       </a>
     </div>
-    <p class="copyright">© 2024 My Portfolio. All rights reserved.</p>
+    <p class="copyright">© 2026 My Portfolio. All rights reserved.</p>
   </footer>
 </body>
 </html>
